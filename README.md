@@ -10,6 +10,8 @@ No theory dumps. Every single day links to one real, verifiable resource — a p
 
 **New to the field?** Start at Day 1. **Already know the basics?** Jump straight to whichever week matches what you're missing — every day stands on its own.
 
+**Want something shorter first?** This is the deep track. See **[7 Days of AI Security](https://github.com/ppradyoth/7-days-of-ai-security)** (a one-week taste test) or **[30 Days of AI Security](https://github.com/ppradyoth/30-days-of-ai-security)** (a time-boxed month) — same verified source, less time.
+
 ---
 
 ## Why this exists
