@@ -42,7 +42,7 @@ The "100 Days of X" format has a real track record — [`100-Days-Of-ML-Code`](h
 - [ ] **Day 5** — Finish the char-level transformer from Day 4. Train it on Shakespeare text until it generates coherent-ish output.
 - [ ] **Day 6** — Read [Intriguing Properties of Neural Networks (Szegedy et al., 2013)](https://arxiv.org/abs/1312.6199) — the paper that discovered adversarial examples exist.
 - [ ] **Day 7** — Read [Explaining and Harnessing Adversarial Examples (Goodfellow et al., 2014)](https://arxiv.org/abs/1412.6572) — the FGSM paper.
-- [ ] **Day 8** — Implement FGSM from scratch on a pretrained ResNet (full code: [`ai-security-resources/LABS.md#lab-1`](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md#lab-1-fast-gradient-sign-method-fgsm-on-pytorch)). Drop a classifier's accuracy from >95% to <10% with a human-invisible perturbation.
+- [ ] **Day 8** — Implement FGSM from scratch on a pretrained ResNet (full code: [`ai-security-resources/LABS.md#lab-1`](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md#-lab-1-fast-gradient-sign-method-fgsm-on-pytorch)). Drop a classifier's accuracy from >95% to <10% with a human-invisible perturbation.
 - [ ] **Day 9** — Read [Towards Evaluating the Robustness of Neural Networks (Carlini & Wagner, 2017)](https://arxiv.org/abs/1608.04644) — why most adversarial defenses don't actually work.
 - [ ] **Day 10** — Read the [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) in full. You'll use this taxonomy every day from here on.
 
@@ -60,7 +60,7 @@ The "100 Days of X" format has a real track record — [`100-Days-Of-ML-Code`](h
 - [ ] **Day 17** — Try [PromptHack](https://prompthack.org/) and the [HackAPrompt](https://www.hackaprompt.com/) archive challenges.
 - [ ] **Day 18** — Read [Universal and Transferable Adversarial Attacks on Aligned Language Models (Zou et al., 2023)](https://arxiv.org/abs/2307.15043) — the GCG suffix-attack paper.
 - [ ] **Day 19** — Read [Jailbroken: How Does LLM Safety Alignment Behave Under Adversarial Prompting? (Wei et al., 2023)](https://arxiv.org/abs/2307.02483) — the competing-objectives / OOD-capability taxonomy.
-- [ ] **Day 20** — Read Anthropic's [Many-Shot Jailbreaking](https://www.anthropic.com/research/many-shot-jailbreaking). Then run [Lab 2](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md#lab-2-crafting-direct-prompt-injections--jailbreaks): build a local Ollama sandbox and test Base64/roleplay/cognitive-split obfuscation against Llama 3.
+- [ ] **Day 20** — Read Anthropic's [Many-Shot Jailbreaking](https://www.anthropic.com/research/many-shot-jailbreaking). Then run [Lab 2](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md#-lab-2-crafting-direct-prompt-injections--jailbreaks): build a local Ollama sandbox and test Base64/roleplay/cognitive-split obfuscation against Llama 3.
 
 </details>
 
@@ -84,7 +84,7 @@ The "100 Days of X" format has a real track record — [`100-Days-Of-ML-Code`](h
 <summary><b>Days 31–40 — Indirect injection & agentic exploitation</b></summary>
 
 - [ ] **Day 31** — Read [More Than a Toy: Indirect Prompt Injection Against LLM-Integrated Applications (Greshake et al., 2023)](https://arxiv.org/abs/2302.12173) in full — the foundational paper for this whole attack class.
-- [ ] **Day 32** — Run [Lab 3](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md#lab-3-indirect-prompt-injection-via-rag--tool-hijacking): build a local RAG agent, poison a text file it ingests, and get it to silently trigger an unauthorized "tool" call.
+- [ ] **Day 32** — Run [Lab 3](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md#-lab-3-indirect-prompt-injection-via-rag--tool-hijacking): build a local RAG agent, poison a text file it ingests, and get it to silently trigger an unauthorized "tool" call.
 - [ ] **Day 33** — Install [AgentDojo](https://github.com/ethz-spylab/agentdojo) (`pip install agentdojo`) — 97 tasks, 629 security test cases across banking, Slack, travel, and workspace domains.
 - [ ] **Day 34** — Reproduce one AgentDojo result and check it against the public leaderboard at [agentdojo.spylab.ai](https://agentdojo.spylab.ai).
 - [ ] **Day 35** — Read [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) and learn its direct-harm vs. data-stealing taxonomy for injected tool calls.
@@ -117,7 +117,7 @@ The "100 Days of X" format has a real track record — [`100-Days-Of-ML-Code`](h
 
 - [ ] **Day 51** — Deploy [LLM Guard](https://github.com/protectai/llm-guard) and test its input/output scanners against your Day-20 jailbreak payloads.
 - [ ] **Day 52** — Deploy [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) and write a Colang flow that constrains topic/tool use.
-- [ ] **Day 53** — Run [Lab 5](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md#lab-5-implementing-an-active-inputoutput-guardrail-pipeline): build your own input/output guardrail proxy from scratch in Python.
+- [ ] **Day 53** — Run [Lab 5, "Implementing an Active Input/Output Guardrail Pipeline"](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md): build your own input/output guardrail proxy from scratch in Python.
 - [ ] **Day 54** — Attack your own Day-53 proxy. Find one sequence that clears the input classifier but gets caught by the output scanner (or vice versa).
 - [ ] **Day 55** — Deploy [Llama Guard 4 (12B)](https://huggingface.co/meta-llama/Llama-Guard-4-12B) and test it against the MLCommons hazards taxonomy.
 - [ ] **Day 56** — Deploy [Llama Prompt Guard 2](https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M). Understand why Meta stacks it *in front of* Llama Guard (a content classifier is itself an injectable LLM).
@@ -148,7 +148,7 @@ The "100 Days of X" format has a real track record — [`100-Days-Of-ML-Code`](h
 <summary><b>Days 71–80 — Model supply chain security</b></summary>
 
 - [ ] **Day 71** — Understand why `pickle` deserialization is inherently unsafe for shipping model weights.
-- [ ] **Day 72** — Run [Lab 4](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md#lab-4-model-supply-chain-exploitation-via-pickle-malware): build a safe, educational pickle-RCE proof of concept.
+- [ ] **Day 72** — Run [Lab 4](https://github.com/ppradyoth/ai-security-resources/blob/main/LABS.md#-lab-4-model-supply-chain-exploitation-via-pickle-malware): build a safe, educational pickle-RCE proof of concept.
 - [ ] **Day 73** — Run [ModelScan](https://github.com/protectai/modelscan) against a batch of models downloaded from Hugging Face.
 - [ ] **Day 74** — Run [PickleScan](https://github.com/mmaitre314/picklescan) (`≥ 0.0.31`) and read up on why the pre-patch versions were bypassable ([CVE-2025-10155 / -10156 / -10157](https://github.com/ppradyoth/ai-security-resources/blob/main/INCIDENTS_AND_GUIDANCE_2026.md), all CVSS 9.3).
 - [ ] **Day 75** — Convert a pickle-based checkpoint to [`safetensors`](https://github.com/huggingface/safetensors) and confirm it loads with zero code execution.
