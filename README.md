@@ -207,6 +207,8 @@ If you want the exhaustive, non-day-boxed version of all of this — including t
 
 Interviewing soon instead of studying long-term? **[AI Security Interview Questions](https://github.com/ppradyoth/ai-security-interview-questions)** covers 7 distinct AI-security-adjacent roles (red team, AppSec, MLSecOps, GRC, trust & safety, alignment research, model risk) with grounded technical Q&A for each.
 
+Need real payloads to feed garak/PyRIT/promptfoo instead of reading about them? **[Prompt Injection & Jailbreak Technique Library](https://github.com/ppradyoth/prompt-injection-jailbreak-library)** is a categorized taxonomy of attack technique classes, sourced entirely from public tools, papers, and datasets.
+
 ## Contributing
 
 Found a dead link, a stale CVE reference, or a day that needs a better resource? See [CONTRIBUTING.md](CONTRIBUTING.md). PRs that swap in unverified or unmaintained resources will be closed — every link here has to trace back to a primary source.
